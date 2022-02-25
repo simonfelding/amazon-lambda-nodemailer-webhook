@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@middy/core": "^2.5.7",
+    "@middy/http-error-handler": "^2.5.7",
+    "@middy/http-header-normalizer": "^2.5.7",
+    "@middy/http-json-body-parser": "^2.5.7",
+    "@middy/http-multipart-body-parser": "^2.5.7",
+    "@middy/validator": "^2.5.7",
+    "nodemailer": "^6.7.2"
+  }
+}
