@@ -25,3 +25,6 @@ use docker compose and add the container with container_name: "webhook". Add the
 
 # test
 `curl -XPOST "https://example.com/mailhook" -d '{"body": {"name":"a","cpr":"12345678-1234","mail":"a@b.dk","text":"hello world! 123 123 123 123 123 12"}}' -H 'Content-Type: application/json'`
+
+# Advice
+Don't actually store the password in the docker-compose.yml file. It's probably a bad idea for deployment (but fine if you're just testing, env variables can be securely set in the aws lambda control panel).
