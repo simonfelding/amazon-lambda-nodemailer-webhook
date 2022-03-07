@@ -11,6 +11,7 @@ body:
 	text:
 ```
 Make sure to examine the docker-compose.yml for important environment settings.
+Also make sure to edit the inputSchema in server.js so it fits your purpose and modify the below curl string accordingly.
 
 `curl -XPOST "http://webhook:8080/2015-03-31/functions/function/invocations" -d '{"body": {"name":"a","cpr":"12345678-1234","mail":"a@b.dk","text":"hello world! 123 123 123 123 123 12"}}' -H 'Content-Type: application/json'`
 
