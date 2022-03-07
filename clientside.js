@@ -8,7 +8,7 @@ wpcf7Form.addEventListener( 'wpcf7submit', function( event ) {
 
     http.onreadystatechange = function() { // request sent
         console.log(`readystate is ${this.readyState}`) // debugging
-        if (this.readyState == 2) {
+        if (this.readyState == 1) {
             document.getElementsByClassName("wpcf7-spinner")[0].style.visibility = "visible";
             document.getElementsByClassName("wpcf7-submit")[0].value = "Sender...";
             document.getElementsByClassName("wpcf7-response-output")[0].style.display = "";
