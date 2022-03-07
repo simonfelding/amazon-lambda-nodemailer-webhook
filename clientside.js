@@ -14,6 +14,7 @@ wpcf7Form.addEventListener( 'wpcf7submit', function( event ) {
             document.getElementsByClassName("wpcf7-response-output")[0].style.display = "";
        }
         if (this.readyState == 4) {  // received answer
+            console.log(http.responseText);
             document.getElementsByClassName("wpcf7-spinner")[0].style.visibility = "hidden";
             if (this.status != 200) {
             document.getElementsByClassName("wpcf7-response-output")[0].innerHTML = `Fejl ${this.status}: Beskeden kunne desværre ikke sendes. Prøv igen eller ring i stedet.`;
@@ -34,6 +35,5 @@ wpcf7Form.addEventListener( 'wpcf7submit', function( event ) {
     console.log("submitted message");
     console.log(payload);
     http.send(payload);
-    console.log(http.responseText);
 }, false );
 
